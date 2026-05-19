@@ -1,11 +1,5 @@
-export const dynamic = "force-dynamic";
-
-export const runtime = "nodejs";
-
-export async function POST(req) {
-
+export async function GET() {
   return Response.json({
-    success: true
+    ok: true,
   });
-
 }
