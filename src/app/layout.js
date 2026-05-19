@@ -3,7 +3,7 @@
 import "./globals.css";
 
 import Sidebar
-from "@/components/layout/Sidebar";
+from "../../components/layout/Sidebar";
 
 export default function RootLayout({
   children,
