@@ -2,43 +2,26 @@
 
 import "./globals.css";
 
-import { useState } from "react";
-
-import Sidebar from "../components/layout/Sidebar";
-import Topbar from "../components/layout/Topbar";
+import Sidebar
+from "../components/layout/Sidebar";
 
 export default function RootLayout({
   children,
 }) {
 
-  const [darkMode, setDarkMode] =
-    useState(false);
-
   return (
+
     <html lang="es">
 
-      <body
-        className={
-          darkMode
-            ? "bg-gray-900 text-white"
-            : "bg-gray-100 text-black"
-        }
-      >
+      <body className="bg-gray-100">
 
         <div className="flex">
 
           <Sidebar />
 
-          <main className="flex-1 min-h-screen">
+          <main className="flex-1 p-6">
 
-            <Topbar
-              darkMode={darkMode}
-              setDarkMode={setDarkMode}
-            />
-
-            <div className="p-6">
-              {children}
-            </div>
+            {children}
 
           </main>
 
