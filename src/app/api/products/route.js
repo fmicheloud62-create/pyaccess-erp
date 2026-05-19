@@ -1,5 +1,9 @@
 import db from "../../../database/db";
 
+export const dynamic = "force-dynamic";
+
+export const runtime = "nodejs";
+
 export async function GET() {
 
   return new Promise(

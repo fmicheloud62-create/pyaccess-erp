@@ -10,6 +10,12 @@ const SECRET = "PYACCESS_SECRET";
 
 export const dynamic = "force-dynamic";
 
+export const runtime = "nodejs";
+
+export async function GET() {
+
+}
+
 export async function POST(request) {
 
   try {
